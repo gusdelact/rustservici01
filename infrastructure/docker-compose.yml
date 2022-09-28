@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    image: 111661660369.dkr.ecr.us-east-1.amazonaws.com/rustmx/servici01:0.1
+    ports:
+      - "8000:8000"
+    logging:
+      driver: awslogs
+      options: 
+        awslogs-group: servici01
+        awslogs-region: us-east-1
+        awslogs-stream-prefix: domini01
